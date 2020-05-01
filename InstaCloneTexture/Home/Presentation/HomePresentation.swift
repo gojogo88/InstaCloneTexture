@@ -16,8 +16,17 @@ class HomePresentation: BaseNode, ASTableDelegate {
   override init() {
     super.init()
     table.allowsSelection = false
-    table.backgroundColor = .red
+    //table.backgroundColor = .red
     table.dataSource = dataSource
+    closureSetup()  //has to come first before fetchData
+    dataSource.fetchDataFromLocalPath()
+  }
+  
+  
+  private func closureSetup() {
+    dataSource.reloadTableView = { [weak self] in
+      self?.table.reloadData()
+    }
   }
   
   //tableView header
@@ -31,4 +40,7 @@ class HomePresentation: BaseNode, ASTableDelegate {
     let width = UIScreen.main.bounds.width
     return ASSizeRangeMake(CGSize(width: width, height: 0), CGSize(width: width, height: CGFloat.greatestFiniteMagnitude))
   }
+  
+  
+  
 }

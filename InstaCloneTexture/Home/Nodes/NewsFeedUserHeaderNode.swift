@@ -49,14 +49,19 @@ class NewsFeedUserHeaderNode: BaseNode {
   }
   
   private func setup() {
-    profileImage.backgroundColor = .green
     profileImage.cornerRadius = 36/2
     profileImage.style.preferredSize = CGSize(width: 36, height: 36)
-    
-    name.attributedText = NSAttributedString(string: "Texture is cool")
     
     let image = ASImageNodeTintColorModificationBlock(.black)(UIImage(named: "ellipsis")!)
     extraButton.setImage(image, for: .normal)
     extraButton.style.preferredSize = CGSize(width: 10, height: 10)
+  }
+  
+  
+  func populate(user: User?) {
+    profileImage.url = URL(string: user?.profileImageUrl ?? "")
+    
+    name.attributedText = NSAttributedString(string: user?.username ?? "Unknown User", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 17), NSAttributedString.Key.foregroundColor: UIColor.label])
+    
   }
 }

@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C0FE58E245BCAAA00CEDFD0 /* instaClone.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C0FE58D245BCAAA00CEDFD0 /* instaClone.json */; };
+		6C0FE591245BCB4300CEDFD0 /* BaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0FE590245BCB4300CEDFD0 /* BaseDataSource.swift */; };
+		6C0FE593245BCB8A00CEDFD0 /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0FE592245BCB8A00CEDFD0 /* Stories.swift */; };
+		6C0FE595245BCBEC00CEDFD0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0FE594245BCBEC00CEDFD0 /* User.swift */; };
+		6C0FE597245BCC4200CEDFD0 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0FE596245BCC4200CEDFD0 /* NewsFeed.swift */; };
+		6C0FE599245BCD6000CEDFD0 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0FE598245BCD6000CEDFD0 /* Comment.swift */; };
+		6C0FE59C245BCDBA00CEDFD0 /* Bundle+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0FE59B245BCDBA00CEDFD0 /* Bundle+Ext.swift */; };
 		6C1042B0245A9C6A00FF28F1 /* BaseNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1042AF245A9C6A00FF28F1 /* BaseNode.swift */; };
 		6C1042B8245AA7F900FF28F1 /* HomeDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1042B7245AA7F900FF28F1 /* HomeDataSource.swift */; };
 		6C1042BA245AA99D00FF28F1 /* HomePresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1042B9245AA99D00FF28F1 /* HomePresentation.swift */; };
 		6C1042BC245AAC2500FF28F1 /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1042BB245AAC2500FF28F1 /* NewsFeedCell.swift */; };
 		6C1042BE245AAC5700FF28F1 /* BaseCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1042BD245AAC5700FF28F1 /* BaseCellNode.swift */; };
 		6C1042C0245AAF0000FF28F1 /* NewsFeedUserHeaderNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1042BF245AAF0000FF28F1 /* NewsFeedUserHeaderNode.swift */; };
+		6C1042C2245ABE6800FF28F1 /* NewsFeedImageNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1042C1245ABE6800FF28F1 /* NewsFeedImageNode.swift */; };
+		6C1042C4245AC02900FF28F1 /* NewsFeedSocialNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1042C3245AC02900FF28F1 /* NewsFeedSocialNode.swift */; };
 		6C7A7745245A9791008EE537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7A7744245A9791008EE537 /* AppDelegate.swift */; };
 		6C7A7747245A9791008EE537 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7A7746245A9791008EE537 /* SceneDelegate.swift */; };
 		6C7A7749245A9791008EE537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7A7748245A9791008EE537 /* ViewController.swift */; };
@@ -24,12 +33,21 @@
 /* Begin PBXFileReference section */
 		0B0C732D3750E546D40F9411 /* Pods-InstaCloneTexture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaCloneTexture.release.xcconfig"; path = "Target Support Files/Pods-InstaCloneTexture/Pods-InstaCloneTexture.release.xcconfig"; sourceTree = "<group>"; };
 		14179B530206E08C8B398E73 /* Pods_InstaCloneTexture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaCloneTexture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0FE58D245BCAAA00CEDFD0 /* instaClone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = instaClone.json; sourceTree = "<group>"; };
+		6C0FE590245BCB4300CEDFD0 /* BaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataSource.swift; sourceTree = "<group>"; };
+		6C0FE592245BCB8A00CEDFD0 /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
+		6C0FE594245BCBEC00CEDFD0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6C0FE596245BCC4200CEDFD0 /* NewsFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
+		6C0FE598245BCD6000CEDFD0 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		6C0FE59B245BCDBA00CEDFD0 /* Bundle+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Ext.swift"; sourceTree = "<group>"; };
 		6C1042AF245A9C6A00FF28F1 /* BaseNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNode.swift; sourceTree = "<group>"; };
 		6C1042B7245AA7F900FF28F1 /* HomeDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataSource.swift; sourceTree = "<group>"; };
 		6C1042B9245AA99D00FF28F1 /* HomePresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresentation.swift; sourceTree = "<group>"; };
 		6C1042BB245AAC2500FF28F1 /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
 		6C1042BD245AAC5700FF28F1 /* BaseCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCellNode.swift; sourceTree = "<group>"; };
 		6C1042BF245AAF0000FF28F1 /* NewsFeedUserHeaderNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedUserHeaderNode.swift; sourceTree = "<group>"; };
+		6C1042C1245ABE6800FF28F1 /* NewsFeedImageNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedImageNode.swift; sourceTree = "<group>"; };
+		6C1042C3245AC02900FF28F1 /* NewsFeedSocialNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedSocialNode.swift; sourceTree = "<group>"; };
 		6C7A7741245A9791008EE537 /* InstaCloneTexture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCloneTexture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C7A7744245A9791008EE537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C7A7746245A9791008EE537 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,9 +70,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C0FE58C245BCA8200CEDFD0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C0FE58D245BCAAA00CEDFD0 /* instaClone.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6C0FE58F245BCB2200CEDFD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C0FE590245BCB4300CEDFD0 /* BaseDataSource.swift */,
+				6C0FE592245BCB8A00CEDFD0 /* Stories.swift */,
+				6C0FE594245BCBEC00CEDFD0 /* User.swift */,
+				6C0FE596245BCC4200CEDFD0 /* NewsFeed.swift */,
+				6C0FE598245BCD6000CEDFD0 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6C0FE59A245BCD9300CEDFD0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6C0FE59B245BCDBA00CEDFD0 /* Bundle+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		6C1042B1245AA7A000FF28F1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				6C0FE58C245BCA8200CEDFD0 /* Resources */,
+				6C0FE59A245BCD9300CEDFD0 /* Extension */,
+				6C0FE58F245BCB2200CEDFD0 /* Model */,
 				6C7A7744245A9791008EE537 /* AppDelegate.swift */,
 				6C7A7746245A9791008EE537 /* SceneDelegate.swift */,
 				6C1042AF245A9C6A00FF28F1 /* BaseNode.swift */,
@@ -103,6 +152,8 @@
 			children = (
 				6C1042BB245AAC2500FF28F1 /* NewsFeedCell.swift */,
 				6C1042BF245AAF0000FF28F1 /* NewsFeedUserHeaderNode.swift */,
+				6C1042C1245ABE6800FF28F1 /* NewsFeedImageNode.swift */,
+				6C1042C3245AC02900FF28F1 /* NewsFeedSocialNode.swift */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
@@ -214,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C0FE58E245BCAAA00CEDFD0 /* instaClone.json in Resources */,
 				6C7A7751245A9793008EE537 /* LaunchScreen.storyboard in Resources */,
 				6C7A774E245A9793008EE537 /* Assets.xcassets in Resources */,
 			);
@@ -269,13 +321,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C1042BA245AA99D00FF28F1 /* HomePresentation.swift in Sources */,
+				6C0FE593245BCB8A00CEDFD0 /* Stories.swift in Sources */,
 				6C1042B8245AA7F900FF28F1 /* HomeDataSource.swift in Sources */,
+				6C0FE597245BCC4200CEDFD0 /* NewsFeed.swift in Sources */,
 				6C7A7749245A9791008EE537 /* ViewController.swift in Sources */,
 				6C1042C0245AAF0000FF28F1 /* NewsFeedUserHeaderNode.swift in Sources */,
 				6C7A7745245A9791008EE537 /* AppDelegate.swift in Sources */,
+				6C0FE595245BCBEC00CEDFD0 /* User.swift in Sources */,
+				6C1042C4245AC02900FF28F1 /* NewsFeedSocialNode.swift in Sources */,
 				6C1042BC245AAC2500FF28F1 /* NewsFeedCell.swift in Sources */,
 				6C1042B0245A9C6A00FF28F1 /* BaseNode.swift in Sources */,
+				6C0FE599245BCD6000CEDFD0 /* Comment.swift in Sources */,
+				6C0FE59C245BCDBA00CEDFD0 /* Bundle+Ext.swift in Sources */,
 				6C1042BE245AAC5700FF28F1 /* BaseCellNode.swift in Sources */,
+				6C0FE591245BCB4300CEDFD0 /* BaseDataSource.swift in Sources */,
+				6C1042C2245ABE6800FF28F1 /* NewsFeedImageNode.swift in Sources */,
 				6C7A7747245A9791008EE537 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

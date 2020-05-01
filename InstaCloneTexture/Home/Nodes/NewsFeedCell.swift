@@ -11,9 +11,15 @@ import AsyncDisplayKit
 class NewsFeedCell: BaseCellNode {
   
   let newsFeedUserHeaderNode = NewsFeedUserHeaderNode()
+  let newsFeedImageNode = NewsFeedImageNode()
+  let newsFeedSocialNode = NewsFeedSocialNode()
   
-  override init(){
+  var newsFeed: NewsFeed?
+  
+  init(feed: NewsFeed?){
     super.init()
+    self.newsFeed = feed
+    populate(feed: self.newsFeed)
   }
   
   
@@ -23,8 +29,15 @@ class NewsFeedCell: BaseCellNode {
         spacing: 0,
         justifyContent: .start,
         alignItems: .stretch,
-        children: [newsFeedUserHeaderNode])
+        children: [newsFeedUserHeaderNode, newsFeedImageNode, newsFeedSocialNode])
     
     return vStack
+  }
+  
+  
+  private func populate(feed: NewsFeed?) {
+    newsFeedUserHeaderNode.populate(user: feed?.user)
+    newsFeedImageNode.populate(feed: feed)
+    newsFeedSocialNode.populate(feed: feed)
   }
 }
