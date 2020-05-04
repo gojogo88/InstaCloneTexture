@@ -66,18 +66,32 @@ class NewsFeedSocialNode: BaseNode {
   }
   
   
+  override func asyncTraitCollectionDidChange() {
+    super.asyncTraitCollectionDidChange()
+    dynamicColours()
+  }
+  
   private func setupNode() {
     shareButtonNode.style.preferredSize = CGSize(width: 30, height: 30)
     commentButtonNode.style.preferredSize = CGSize(width: 30, height: 30)
     bookmarkButtonNode.style.preferredSize = CGSize(width: 30, height: 30)
     likeButtonNode.style.preferredSize = CGSize(width: 30, height: 30)
-    
-    shareButtonNode.setImage(UIImage(named: "share"), for: .normal)
-    commentButtonNode.setImage(UIImage(named: "comment"), for: .normal)
-    bookmarkButtonNode.setImage(UIImage(named: "bookmark"), for: .normal)
-    likeButtonNode.setImage(UIImage(named: "like"), for: .normal)
+    dynamicColours()
   }
   
+  
+  private func dynamicColours() {
+    if let colour = colourSet {
+      let imageLike = ASImageNodeTintColorModificationBlock(colour)(UIImage(named: "like")!)
+      likeButtonNode.setImage(imageLike, for: .normal)
+      let imageShare = ASImageNodeTintColorModificationBlock(colour)(UIImage(named: "share")!)
+      shareButtonNode.setImage(imageShare, for: .normal)
+      let imageComment = ASImageNodeTintColorModificationBlock(colour)(UIImage(named: "comment")!)
+      commentButtonNode.setImage(imageComment, for: .normal)
+      let imageBookmark = ASImageNodeTintColorModificationBlock(colour)(UIImage(named: "bookmark")!)
+      bookmarkButtonNode.setImage(imageBookmark, for: .normal)
+    }
+  }
   
   func populate(feed: NewsFeed?) {
     guard let numberOfLikes = feed?.likes else { return }

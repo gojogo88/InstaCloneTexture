@@ -29,6 +29,7 @@ class StoryFeedNode: BaseCellNode {
   private func setupNode() {
     nameNode.maximumNumberOfLines = 1
     imageNode.style.preferredSize = CGSize(width: 60, height: 60)
+    imageNode.backgroundColor = .white
     imageNode.cornerRadius = 60 / 2
     imageNode.borderWidth = 2
   }

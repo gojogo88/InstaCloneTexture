@@ -48,13 +48,28 @@ class NewsFeedUserHeaderNode: BaseNode {
     return finalSpec
   }
   
+  
+  override func asyncTraitCollectionDidChange() {
+    super.asyncTraitCollectionDidChange()
+    
+    dynamicColour()
+  }
+  
   private func setup() {
     profileImage.cornerRadius = 36/2
     profileImage.style.preferredSize = CGSize(width: 36, height: 36)
+    profileImage.backgroundColor = .white
     
-    let image = ASImageNodeTintColorModificationBlock(.black)(UIImage(named: "ellipsis")!)
-    extraButton.setImage(image, for: .normal)
     extraButton.style.preferredSize = CGSize(width: 10, height: 10)
+    dynamicColour()
+  }
+  
+  
+  private func dynamicColour() {
+    if let colour = colourSet {
+      let image = ASImageNodeTintColorModificationBlock(colour)(UIImage(named: "ellipsis")!)
+      extraButton.setImage(image, for: .normal)
+    }
   }
   
   

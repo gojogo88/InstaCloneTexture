@@ -33,6 +33,7 @@
 		6C7A7751245A9793008EE537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C7A774F245A9793008EE537 /* LaunchScreen.storyboard */; };
 		6CFCE482245FC97500C16DC5 /* UserStoryNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCE481245FC97500C16DC5 /* UserStoryNode.swift */; };
 		6CFCE484245FCAB100C16DC5 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCE483245FCAB100C16DC5 /* UIColor+Ext.swift */; };
+		6CFCE486245FCFAC00C16DC5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFCE485245FCFAC00C16DC5 /* Constants.swift */; };
 		C3E35F084926F5414C1DF244 /* Pods_InstaCloneTexture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14179B530206E08C8B398E73 /* Pods_InstaCloneTexture.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		6C7A7752245A9793008EE537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CFCE481245FC97500C16DC5 /* UserStoryNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStoryNode.swift; sourceTree = "<group>"; };
 		6CFCE483245FCAB100C16DC5 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
+		6CFCE485245FCFAC00C16DC5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7987A4B5AD159D3C12170694 /* Pods-InstaCloneTexture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaCloneTexture.debug.xcconfig"; path = "Target Support Files/Pods-InstaCloneTexture/Pods-InstaCloneTexture.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 				6C7A7746245A9791008EE537 /* SceneDelegate.swift */,
 				6C1042AF245A9C6A00FF28F1 /* BaseNode.swift */,
 				6C1042BD245AAC5700FF28F1 /* BaseCellNode.swift */,
+				6CFCE485245FCFAC00C16DC5 /* Constants.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				6C0FE591245BCB4300CEDFD0 /* BaseDataSource.swift in Sources */,
 				6C1042C2245ABE6800FF28F1 /* NewsFeedImageNode.swift in Sources */,
 				6C7A7747245A9791008EE537 /* SceneDelegate.swift in Sources */,
+				6CFCE486245FCFAC00C16DC5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
