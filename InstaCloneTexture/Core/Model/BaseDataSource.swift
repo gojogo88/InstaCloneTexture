@@ -9,11 +9,13 @@
 import Foundation
 
 struct BaseDataSource: Codable {
+  var user: User?
   var stories: [Stories]?
   var newsFeed: [NewsFeed]?
   
   enum CodingKeys: String, CodingKey {
     case stories
+    case user = "my_user"
     case newsFeed = "news_feed"
   }
 }

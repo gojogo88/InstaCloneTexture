@@ -13,8 +13,9 @@ class NewsFeedCell: BaseCellNode {
   let newsFeedUserHeaderNode = NewsFeedUserHeaderNode()
   let newsFeedImageNode = NewsFeedImageNode()
   let newsFeedSocialNode = NewsFeedSocialNode()
+  let newsFeedLastCommentNode = NewsFeedLastCommentNode()
   
-  var newsFeed: NewsFeed?
+  private var newsFeed: NewsFeed?
   
   init(feed: NewsFeed?){
     super.init()
@@ -24,12 +25,21 @@ class NewsFeedCell: BaseCellNode {
   
   
   override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+    var elements = [ASLayoutElement]()
+    elements.append(newsFeedUserHeaderNode)
+    elements.append(newsFeedImageNode)
+    elements.append(newsFeedSocialNode)
+    
+    if let lastComment = newsFeed?.lastComment, lastComment.comment?.count ?? 0 > 0 {
+      elements.append(newsFeedLastCommentNode)
+    }
+    
     let vStack = ASStackLayoutSpec(
         direction: .vertical,
         spacing: 0,
         justifyContent: .start,
         alignItems: .stretch,
-        children: [newsFeedUserHeaderNode, newsFeedImageNode, newsFeedSocialNode])
+        children: elements)
     
     return vStack
   }
@@ -39,5 +49,6 @@ class NewsFeedCell: BaseCellNode {
     newsFeedUserHeaderNode.populate(user: feed?.user)
     newsFeedImageNode.populate(feed: feed)
     newsFeedSocialNode.populate(feed: feed)
+    newsFeedLastCommentNode.populate(feed: feed)
   }
 }

@@ -21,6 +21,6 @@ struct NewsFeed: Codable {
     case imageUrl = "image_url"
     case aspectRatio = "aspect_ratio"
     case lastComment = "last_comment"
-    case postId = "pose_id"
+    case postId = "post_id"
   }
 }

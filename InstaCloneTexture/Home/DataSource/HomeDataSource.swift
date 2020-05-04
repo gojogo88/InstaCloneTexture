@@ -26,7 +26,7 @@ class HomeDataSource: NSObject, ASTableDataSource {
   func tableNode(_ tableNode: ASTableNode, nodeBlockForRowAt indexPath: IndexPath) -> ASCellNodeBlock {
     return { [weak self] in
       if indexPath.section == 0 {
-        let cell = ASCellNode()
+        let cell = StoryFeedCell(stories: self?.dataSource?.stories, user: self?.dataSource?.user)
         return cell
       } else {
         let feed = self?.dataSource?.newsFeed?[indexPath.row]
