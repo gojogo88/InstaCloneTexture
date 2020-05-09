@@ -57,6 +57,7 @@ class NewsFeedUserHeaderNode: BaseNode {
   
   private func setup() {
     profileImage.cornerRadius = 36/2
+    profileImage.cornerRoundingType = .precomposited
     profileImage.style.preferredSize = CGSize(width: 36, height: 36)
     profileImage.backgroundColor = .white
     

@@ -33,8 +33,8 @@ class NewsFeedLastCommentNode: BaseNode {
   
   private func setupNode() {
     imageNode.style.preferredSize = CGSize(width: 20, height: 20)
+    imageNode.cornerRoundingType = .precomposited
     imageNode.cornerRadius = 20/2
-    imageNode.backgroundColor = .white
   }
   
   

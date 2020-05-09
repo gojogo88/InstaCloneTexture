@@ -20,10 +20,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     guard let windowScene = (scene as? UIWindowScene) else { return }
     window = UIWindow(windowScene: windowScene)
     window?.windowScene = windowScene
-    let viewController = ViewController()
-    let navigationController = ASNavigationController(rootViewController: viewController)
-    navigationController.navigationBar.topItem?.title = "InstaClone"
-    window?.rootViewController = navigationController
+//    let viewController = ViewController()
+//    let navigationController = ASNavigationController(rootViewController: viewController)
+//    navigationController.navigationBar.topItem?.title = "InstaClone"
+//    window?.rootViewController = navigationController
+    let viewController = TabBarController()
+    window?.rootViewController = viewController
     window?.makeKeyAndVisible()
   }
 

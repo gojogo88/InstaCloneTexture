@@ -29,15 +29,15 @@ class StoryFeedNode: BaseCellNode {
   private func setupNode() {
     nameNode.maximumNumberOfLines = 1
     imageNode.style.preferredSize = CGSize(width: 60, height: 60)
-    imageNode.backgroundColor = .white
+    imageNode.cornerRoundingType = .precomposited
     imageNode.cornerRadius = 60 / 2
-    imageNode.borderWidth = 2
   }
   
   
   func populate(story: Stories?) {
     nameNode.attributedText = NSAttributedString(string: story?.user?.username ?? "Unknown user", attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 12), NSAttributedString.Key.foregroundColor: UIColor.label])
     imageNode.url = URL(string: story?.user?.profileImageUrl ?? "")
-    imageNode.borderColor = story? .isWatched ?? false ? UIColor.lightGray.cgColor : UIColor.red.cgColor
+    let borderColor = story? .isWatched ?? false ? UIColor.lightGray : UIColor.red
+    imageNode.imageModificationBlock = ASImageNodeRoundBorderModificationBlock(4, borderColor)
   }
 }
